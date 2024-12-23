@@ -1,0 +1,136 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>social_media</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>Flockr</AssemblyName>
+    <ApplicationIcon>logo2.ico</ApplicationIcon>
+    <PackageIcon>logo2.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\0.png" />
+    <None Remove="Resources\1.png" />
+    <None Remove="Resources\10.png" />
+    <None Remove="Resources\100.png" />
+    <None Remove="Resources\101.png" />
+    <None Remove="Resources\102.png" />
+    <None Remove="Resources\103.png" />
+    <None Remove="Resources\104.png" />
+    <None Remove="Resources\105.png" />
+    <None Remove="Resources\106.png" />
+    <None Remove="Resources\107.png" />
+    <None Remove="Resources\108.png" />
+    <None Remove="Resources\109.png" />
+    <None Remove="Resources\11.png" />
+    <None Remove="Resources\110.png" />
+    <None Remove="Resources\111.png" />
+    <None Remove="Resources\112.png" />
+    <None Remove="Resources\113.png" />
+    <None Remove="Resources\114.png" />
+    <None Remove="Resources\115.png" />
+    <None Remove="Resources\116.png" />
+    <None Remove="Resources\117.png" />
+    <None Remove="Resources\118.png" />
+    <None Remove="Resources\119.png" />
+    <None Remove="Resources\12.png" />
+    <None Remove="Resources\13.png" />
+    <None Remove="Resources\14.png" />
+    <None Remove="Resources\15.png" />
+    <None Remove="Resources\16.png" />
+    <None Remove="Resources\17.png" />
+    <None Remove="Resources\18.png" />
+    <None Remove="Resources\commenthide.png" />
+    <None Remove="Resources\commentshow.png" />
+    <None Remove="Resources\home.png" />
+    <None Remove="Resources\like.png" />
+    <None Remove="Resources\liked.png" />
+    <None Remove="Resources\loading.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="logo2.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\0.png" />
+    <EmbeddedResource Include="Resources\1.png" />
+    <EmbeddedResource Include="Resources\10.png" />
+    <EmbeddedResource Include="Resources\100.png" />
+    <EmbeddedResource Include="Resources\101.png" />
+    <EmbeddedResource Include="Resources\102.png" />
+    <EmbeddedResource Include="Resources\103.png" />
+    <EmbeddedResource Include="Resources\104.png" />
+    <EmbeddedResource Include="Resources\105.png" />
+    <EmbeddedResource Include="Resources\106.png" />
+    <EmbeddedResource Include="Resources\107.png" />
+    <EmbeddedResource Include="Resources\108.png" />
+    <EmbeddedResource Include="Resources\109.png" />
+    <EmbeddedResource Include="Resources\11.png" />
+    <EmbeddedResource Include="Resources\110.png" />
+    <EmbeddedResource Include="Resources\111.png" />
+    <EmbeddedResource Include="Resources\112.png" />
+    <EmbeddedResource Include="Resources\113.png" />
+    <EmbeddedResource Include="Resources\114.png" />
+    <EmbeddedResource Include="Resources\115.png" />
+    <EmbeddedResource Include="Resources\116.png" />
+    <EmbeddedResource Include="Resources\117.png" />
+    <EmbeddedResource Include="Resources\118.png" />
+    <EmbeddedResource Include="Resources\119.png" />
+    <EmbeddedResource Include="Resources\12.png" />
+    <EmbeddedResource Include="Resources\13.png" />
+    <EmbeddedResource Include="Resources\14.png" />
+    <EmbeddedResource Include="Resources\15.png" />
+    <EmbeddedResource Include="Resources\16.png" />
+    <EmbeddedResource Include="Resources\17.png" />
+    <EmbeddedResource Include="Resources\18.png" />
+    <EmbeddedResource Include="Resources\commentshow.png" />
+    <EmbeddedResource Include="Resources\home.png" />
+    <EmbeddedResource Include="Resources\like.png" />
+    <EmbeddedResource Include="Resources\liked.png" />
+    <EmbeddedResource Include="Resources\loading.gif">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\commenthide.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\Downloads\logo2.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector NET 9.1\MySql.Data.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
